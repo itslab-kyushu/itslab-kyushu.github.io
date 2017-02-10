@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ .Title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/custom.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon {{ .Site.Params.logo }}"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>{{ .Site.Params.title | safeHTML }}</h1>
+								<p>{{ .Site.Params.description | safeHTML }}</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#youtube-comment-scraper">Youtube Comment Scraper</a></li>
+								<li><a href="#sss">Shamir's Secret Sharing</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- youtube-comment-scraper -->
+							<article id="youtube-comment-scraper">
+								<h2 class="major">Youtube Comment Scraper</h2>
+								<span class="image main"><img class="blur" src="/img/youtube-comment-scraper.png" alt="" /></span>
+								<p><a href="https://itslab-kyushu.github.io/youtube-comment-scraper/">Project Page</a></p>
+								<p>
+									Scraping comments from YouTube.
+									This tool is used to collect comments in order to make a dataset for detecting cyberbullying comments.
+								</p>
+								<h3>Publications</h3>
+								<ul>
+									<li>
+										Ziyi Li, <a href="https://www.jkawamoto.info">Junpei Kawamoto</a>,
+										<a href="http://stap.ait.kyushu-u.ac.jp/~fengyk/index-e.html">Yaokai Feng</a>, and Kouichi Sakurai,
+										“Cyberbullying Detection Using Parent-Child Relationship between Comments,”
+										Proc. of the 18th International Conference on Information Integration and Web-based Applications
+										&amp; Services (iiWAS2016), Singapore, Nov. 23-30, 2016.
+									</li>
+								</ul>
+							</article>
+
+						<!-- sss -->
+							<article id="sss">
+								<h2 class="major">Secret Sharing</h2>
+								<span class="image main"><img src="/img/sss.jpg" alt="" /></span>
+								<p><a href="https://itslab-kyushu.github.io/sss/">Project Page</a></p>
+								<p>
+									An Implementation of a Secret Sharing scheme.
+									It provides both a GO library implementing a Secret Sharing scheme
+									and a command line tool which distributes and reconstructs your secret files.
+
+									This software is used as a building block of our proposal,
+									Cross-Group Secret Sharing scheme.
+								</p>
+								<h3>Publications</h3>
+								<ul>
+									<li>
+										Chenyutao Ke,
+										<a href="http://sun.ac.jp/prof/anada/">Hiroaki Anada</a>,
+										<a href="https://www.jkawamoto.info">Junpei Kawamoto</a>,
+										<a href="http://www.is.c.titech.ac.jp/~morozov/">Kirill Morozov</a>, and Kouichi Sakurai,
+										“<a href="http://hdl.handle.net/2324/1563374">Cross-group Secret Sharing for Secure Cloud Storage Service</a>,”
+										Proc. of the Annual International Conference on Ubiquitous Information Management and Communication (IMCOM 2016),
+										pp.63:1-63:8, Vietnam, Jan.4-6, 2016.
+									</li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">
+							&copy; {{ .Site.Params.copyright }},
+							<a href="http://portal.isee.kyushu-u.ac.jp/e/">Kyushu University</a>,
+							<a href="http://sun.ac.jp/e/">University of Nagasaki</a>.
+							<br/>
+							Design: <a href="https://html5up.net">HTML5 UP</a>.
+							Powered by <a href="https://www.gohugo.io/">Hugo.</a>
+						</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
